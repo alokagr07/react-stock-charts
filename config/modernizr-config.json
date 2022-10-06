@@ -1,0 +1,8 @@
+{
+  "minify": false,
+  "options": [],
+  "feature-detects": [
+    "test/es6/promises",
+    "test/network/fetch"
+  ]
+}

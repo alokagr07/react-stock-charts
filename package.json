@@ -1,0 +1,154 @@
+{
+  "name": "react-stock-charts",
+  "version": "0.0.1",
+  "description": "Highly customizable stock charts with ReactJS and d3",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "author": {
+    "name": "Ragu Ramaswamy"
+  },
+  "homepage": "http://alokagr07.github.io/react-stock-charts/",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf -rf ./build",
+    "modernizr": "modernizr -c config/modernizr-config.json -d ./build/dist/modernizr.js",
+    "watch": "npm run clean && npm run modernizr && cross-env IP=0.0.0.0 PORT=8080 BABEL_ENV=watch webpack-dev-server --config config/webpack.config.js --env watch",
+    "docs": "npm run build:docs && ncp docs/images/ build/images && ncp docs/data/ build/data",
+    "build:docs": "echo 'DOCS - BUILD' && cross-env BABEL_ENV=es webpack --config config/webpack.config.js --env docs",
+    "prebuild": "npm run clean && npm run lint",
+    "build": "npm run modernizr && npm run docs",
+    "babel:cjs:watch": "npm run babel:cjs -- -watch",
+    "babel:es:watch": "npm run babel:es -- -watch",
+    "babel:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir build --source-maps",
+    "babel:es": "cross-env BABEL_ENV=es babel src --out-dir build/es --source-maps",
+    "release": "npm run clean && npm run babel:cjs && npm run babel:es && cp README.md build/ && node scripts/release.js",
+    "lint": "eslint --ext .js,.jsx src --fix",
+    "upgrade:patch": "npm version patch",
+    "preversion": "npm run lint",
+    "version": "node scripts/updateVersion.js && git add \"src/index.js\"",
+    "postversion": "git push origin `git rev-parse --abbrev-ref HEAD` && git push origin `git describe`",
+    "npm:publish:next": "npm run release && cd build && npm publish --tag next",
+    "npm:publish:latest": "npm run release && cd build && npm publish",
+    "info": "npm info react-stock-charts",
+    "sourcemap:visualize": "source-map-explorer build/dist/react-stock-charts.min.js build/dist/react-stock-charts.min.js.map",
+    "server": "cd build && python3 -m http.server 8090",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "d3-array": "^3.2.0",
+    "d3-collection": "^1.0.7",
+    "d3-force": "^3.0.0",
+    "d3-format": "^3.1.0",
+    "d3-interpolate": "^3.0.1",
+    "d3-path": "^3.0.1",
+    "d3-scale": "^1.0.7",
+    "d3-selection": "^1.4.2",
+    "d3-shape": "^3.1.0",
+    "d3-time": "^3.0.0",
+    "d3-time-format": "^4.1.0",
+    "debug": "^4.3.4",
+    "lodash.flattendeep": "^4.4.0",
+    "node-sass": "^7.0.3",
+    "prop-types": "^15.8.1",
+    "save-svg-as-png": "^1.4.17"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-react": "^7.18.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bootstrap": "^5.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "d3-dsv": "^3.0.1",
+    "es6-promise": "^4.2.8",
+    "eslint": "^8.24.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-const-immutable":  "^2.1.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "json-loader": "^0.5.7",
+    "modernizr": "^3.12.0",
+    "ncp": "^2.0.0",
+    "postcss-loader": "^7.0.1",
+    "prismjs": "^1.29.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "remarkable-loader": "^0.2.1",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^13.0.2",
+    "shelljs": "^0.8.5",
+    "shortid": "^2.2.16",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-config-utils": "^2.3.1",
+    "webpack-dev-server": "^4.11.1",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
+    ]
+  },
+  "keywords": [
+    "charts",
+    "charting",
+    "stockcharts",
+    "finance",
+    "financechart",
+    "react",
+    "ReactJS",
+    "d3",
+    "react-component",
+    "react-charts",
+    "chart-components",
+    "javascript-finance-chart",
+    "javascript-stockchart",
+    "data-visualization",
+    "data-viz",
+    "d3-finance-chart",
+    "d3-stockchart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alokagr07/react-stock-charts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alokagr07/react-stock-charts/issues"
+  },
+  "maintainers": [
+    {
+      "name": "alokagr07",
+      "email": "alok.agrawal07@gmail.com"
+    }
+  ]
+}
