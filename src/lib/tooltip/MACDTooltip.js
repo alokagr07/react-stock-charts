@@ -97,7 +97,7 @@ MACDTooltip.defaultProps = {
 	origin: [0, 0],
 	displayFormat: format(".2f"),
 	displayValuesFor: displayValuesFor,
-	className: "react-stockcharts-tooltip",
+	className: "react-stock-charts-tooltip",
 };
 
 export default MACDTooltip;

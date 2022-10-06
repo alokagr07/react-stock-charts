@@ -59,7 +59,7 @@ KagiSeries.propTypes = {
 };
 
 KagiSeries.defaultProps = {
-	className: "react-stockcharts-kagi",
+	className: "react-stock-charts-kagi",
 	strokeWidth: 2,
 	stroke: {
 		yang: "#6BA583",

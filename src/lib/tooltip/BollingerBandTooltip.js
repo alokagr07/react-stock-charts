@@ -81,7 +81,7 @@ BollingerBandTooltip.propTypes = {
 };
 
 BollingerBandTooltip.defaultProps = {
-	className: "react-stockcharts-tooltip react-stockcharts-bollingerband-tooltip",
+	className: "react-stock-charts-tooltip react-stock-charts-bollingerband-tooltip",
 	displayFormat: format(".2f"),
 	displayValuesFor: displayValuesFor,
 	origin: [0, 10],

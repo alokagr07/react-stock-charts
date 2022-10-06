@@ -53,7 +53,7 @@ CurrentCoordinate.propTypes = {
 
 CurrentCoordinate.defaultProps = {
 	r: 3,
-	className: "react-stockcharts-current-coordinate",
+	className: "react-stock-charts-current-coordinate",
 };
 
 function helper(props, moreProps) {

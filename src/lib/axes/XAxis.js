@@ -20,7 +20,7 @@ class XAxis extends Component {
 		return <Axis {...this.props} {...moreProps} x
 			zoomEnabled={this.props.zoomEnabled && showTicks}
 			axisZoomCallback={this.axisZoomCallback}
-			zoomCursorClassName="react-stockcharts-ew-resize-cursor" />;
+			zoomCursorClassName="react-stock-charts-ew-resize-cursor" />;
 	}
 }
 
@@ -48,14 +48,14 @@ XAxis.defaultProps = {
 	showTicks: true,
 	showTickLabel: true,
 	showDomain: true,
-	className: "react-stockcharts-x-axis",
+	className: "react-stock-charts-x-axis",
 	ticks: 10,
 	outerTickSize: 0,
 	fill: "none",
 	stroke: "#000000", // x axis stroke color
 	strokeWidth: 1,
 	opacity: 1, // x axis opacity
-	domainClassName: "react-stockcharts-axis-domain",
+	domainClassName: "react-stock-charts-axis-domain",
 	innerTickSize: 5,
 	tickPadding: 6,
 	tickStroke: "#000000", // tick/grid stroke

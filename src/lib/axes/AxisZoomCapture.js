@@ -165,10 +165,10 @@ class AxisZoomCapture extends Component {
 
 		const cursor = isDefined(this.state.startPosition)
 			? zoomCursorClassName
-			: "react-stockcharts-default-cursor";
+			: "react-stock-charts-default-cursor";
 
 		return <rect
-			className={`react-stockcharts-enable-interaction ${cursor} ${className}`}
+			className={`react-stock-charts-enable-interaction ${cursor} ${className}`}
 			ref={this.saveNode}
 			x={bg.x} y={bg.y} opacity={0} height={bg.h} width={bg.w}
 			onContextMenu={this.handleRightClick}

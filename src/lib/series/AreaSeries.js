@@ -74,7 +74,7 @@ AreaSeries.defaultProps = {
 	strokeDasharray: "Solid",
 	opacity: 0.5,
 	fill: "#4682B4",
-	className: "react-stockcharts-area",
+	className: "react-stock-charts-area",
 };
 
 export default AreaSeries;

@@ -48,7 +48,7 @@ class CrossHairCursor extends Component {
 		if (isNotDefined(lines)) return null;
 
 		return (
-			<g className={`react-stockcharts-crosshair ${className}`}>
+			<g className={`react-stock-charts-crosshair ${className}`}>
 				{lines.map(({ strokeDasharray, ...rest }, idx) =>
 					<line
 						key={idx}

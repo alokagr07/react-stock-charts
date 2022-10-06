@@ -6,4 +6,4 @@ Creating a dark background is simply modifying some of the props to use the colo
 }
 ```
 
-There are multiple other properties which have to be customized to make the chart appear as below. see them all in the [source](https://github.com/rrag/react-stockcharts/blob/master/docs/lib/charts/CandleStickChartWithDarkTheme.js), [codesandbox](https://codesandbox.io/s/github/rrag/react-stockcharts-examples2/tree/master/examples/CandleStickChartWithDarkTheme) of this example
+There are multiple other properties which have to be customized to make the chart appear as below. see them all in the [source](https://github.com/alokagr07/react-stock-charts/blob/master/docs/lib/charts/CandleStickChartWithDarkTheme.js), [codesandbox](https://codesandbox.io/s/github/alokagr07/react-stock-charts-examples2/tree/master/examples/CandleStickChartWithDarkTheme) of this example

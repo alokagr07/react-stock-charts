@@ -12,8 +12,8 @@ function buildConfig(mode) {
 	const { ifWatch, ifDocs } = getIfUtils(mode, ["docs", "watch"]);
 
 	const docsEntry = {
-		"react-stockcharts-home": "./docs/index.js",
-		"react-stockcharts-documentation": "./docs/documentation.js",
+		"react-stock-charts-home": "./docs/index.js",
+		"react-stock-charts-documentation": "./docs/documentation.js",
 	};
 
 	const devServer = {
@@ -28,14 +28,23 @@ function buildConfig(mode) {
 
 	const context = rootPath;
 	const loadersForDocs = [
-		{ test: /\.jpg$/, loader: "file-loader" },
-		{ test: /\.(png|svg)$/, loader: "url-loader?mimetype=image/png" },
-		{ test: /\.md$/, loaders: ["html-loader", "remarkable-loader"] },
-		{ test: /\.scss$/, loaders: ["style-loader", "css-loader", "autoprefixer-loader", "sass-loader?outputStyle=expanded"] }
+		{ test: /\.jpg$/, use: {loader: "file-loader"} },
+		{ test: /\.(png|svg)$/, use: {loader: "url-loader?mimetype=image/png"} },
+		{ test: /\.md$/, use: {loader: "html-loader"} },
+		{ test: /\.md$/, use: {loader: "remarkable-loader"} },
+		{ test: /\.scss$/,  use: {loader: "style-loader"} },
+		{ test: /\.scss$/,  use: {loader: "css-loader"} },
+		{ test: /\.scss$/, use: {loader: "postcss-loader"} },
+		{ test: /\.scss$/, use: {loader: "sass-loader", options: {
+      sassOptions: {
+        outputStyle: 'expanded'
+      }
+    }} }
 	];
 
 	console.log("MODE", mode);
 	return {
+    mode: 'development',
 		context,
 		entry: docsEntry,
 		output: {
@@ -46,11 +55,11 @@ function buildConfig(mode) {
 			libraryTarget: "umd",
 			pathinfo: ifWatch(true, false), // since we have eval as devtool for watch, pathinfo gives line numbers which are close enough
 		},
-		devtool: ifWatch("cheap-source-map", "sourcemap"),
+		devtool: ifWatch("cheap-module-source-map"),
 		module: {
-			loaders: removeEmpty([
+			rules: removeEmpty([
 				// { test: /\.json$/, loader: "json" },
-				{ test: /\.(js|jsx)$/, loaders: ["babel-loader"], exclude: /node_modules/ },
+				{ test: /\.(js|jsx)$/, use: {loader: "babel-loader"}, exclude: /node_modules/ },
 				...loadersForDocs,
 			])
 		},
@@ -68,25 +77,16 @@ function buildConfig(mode) {
 					NODE_ENV: JSON.stringify("production"),
 				},
 			})),
-			// ifProd(new webpack.optimize.DedupePlugin()),
-			ifDocs(new webpack.optimize.UglifyJsPlugin({
-				compress: {
-					screw_ie8: true,
-					warnings: false,
-					drop_console: true,
-				},
-				sourceMap: true,
-			})),
 			new HtmlWebpackPlugin({
 				template: "./docs/pageTemplate.js",
-				inject: false,
+				inject: 'body',
 				page: "index",
 				mode,
 				filename: "index.html"
 			}),
 			new HtmlWebpackPlugin({
 				template: "./docs/pageTemplate.js",
-				inject: false,
+				inject: 'body',
 				page: "documentation",
 				mode,
 				filename: "documentation.html"
@@ -96,15 +96,10 @@ function buildConfig(mode) {
 			}),
 		]),
 		devServer,
-		externals: {
-			"react": "React",
-			"react-dom": "ReactDOM",
-			// "d3": "d3",
-		},
 		resolve: {
 			extensions: [".js", ".scss", ".md"],
 			alias: {
-				"react-stockcharts": path.join(rootPath, "src"),
+				"react-stock-charts": path.join(rootPath, "src"),
 			},
 			modules: ["docs", "node_modules"]
 		}

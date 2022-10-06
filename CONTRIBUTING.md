@@ -4,14 +4,14 @@ fork or clone the repo
 
 ```sh
 $ git clone <git url>
-$ cd react-stockcharts
+$ cd react-stock-charts
 $ npm install
 $ npm run watch
 ```
 
 open [http://localhost:8080](http://localhost:8080) in a browser
 
-Logging is done using the [debug](https://www.npmjs.com/package/debug) package. To see logs in the browser's development console enter this code and refresh the page: `localStorage.debug = "react-stockcharts:*"`.
+Logging is done using the [debug](https://www.npmjs.com/package/debug) package. To see logs in the browser's development console enter this code and refresh the page: `localStorage.debug = "react-stock-charts:*"`.
 
 #### Updating documentation
 To update the documentation or add an example, update the files under `docs`.
@@ -28,4 +28,4 @@ To update the source update files under `src`
 
 #### Help needed
 
-Look for issues with the [enhancement](https://github.com/rrag/react-stockcharts/labels/enhancement), [help_wanted](https://github.com/rrag/react-stockcharts/labels/help_wanted)
+Look for issues with the [enhancement](https://github.com/alokagr07/react-stock-charts/labels/enhancement), [help_wanted](https://github.com/alokagr07/react-stock-charts/labels/help_wanted)

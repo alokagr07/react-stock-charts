@@ -42,7 +42,7 @@ function getIndexContent() {
 					</div>
 					<div class="col-md-4">
 						<div class="pull-right top-spacing">
-							<a href="https://github.com/rrag/react-stock-charts" class="btn btn-lg button"><small>View project on</small><br/> GitHub</a>
+							<a href="https://github.com/alokagr07/react-stock-charts" class="btn btn-lg button"><small>View project on</small><br/> GitHub</a>
 						</div>
 					</div>
 				</div>
@@ -72,10 +72,8 @@ function getDocumentationContent() {
 }
 
 module.exports = function(params) {
-	console.log('hello');
-	const { mode, page } = params.htmlWebpackPlugin.options;
 
-	const { chunks } = params.htmlWebpackPlugin.files;
+	const { mode, page } = params.htmlWebpackPlugin.options;
 
 	return `<!DOCTYPE html>
 <html lang="en">
@@ -84,7 +82,7 @@ module.exports = function(params) {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="Highly customizable stock charts">
-		<meta name="author" content="rrag">
+		<meta name="author" content="alokagr07">
 		<!--
 			http://www.favicon.cc/?action=icon&file_id=174180 
 			License: Creative Commons, no attribution 
@@ -106,12 +104,6 @@ module.exports = function(params) {
 	<body class="${page === "index" ? "dark" : ""}">
 
 		${page === "index" ? getIndexContent() : getDocumentationContent()}
-
-		<!-- Placed at the end of the document so the pages load faster -->
-		${page === "index"
-			? `<script type="text/javascript" src="${chunks["react-stock-charts-home"].entry}"></script>`
-			: `<script type="text/javascript" src="${chunks["react-stock-charts-documentation"].entry}"></script>`}
-
 		${getDevServerJs(mode)}
 	</body>
 </html>`;

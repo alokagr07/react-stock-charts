@@ -1,4 +1,4 @@
-[source](https://github.com/rrag/react-stockcharts/blob/master/docs/lib/charts/CandleStickChartWithEdge.js), [codesandbox](https://codesandbox.io/s/github/rrag/react-stockcharts-examples2/tree/master/examples/CandleStickChartWithEdge)
+[source](https://github.com/alokagr07/react-stock-charts/blob/master/docs/lib/charts/CandleStickChartWithEdge.js), [codesandbox](https://codesandbox.io/s/github/alokagr07/react-stock-charts-examples2/tree/master/examples/CandleStickChartWithEdge)
 
 `EdgeIndicator`s are inside each `Chart`, can be of type `first` or `last`, can be located `left` or `right` and orient `left` or `right`. Below you see edges `first` and `last` for all the overlays and also for the `volume` bar.
 

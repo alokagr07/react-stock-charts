@@ -66,7 +66,7 @@ OHLCSeries.propTypes = {
 };
 
 OHLCSeries.defaultProps = {
-	className: "react-stockcharts-ohlc",
+	className: "react-stock-charts-ohlc",
 	yAccessor: (d) => ({ open: d.open, high: d.high, low: d.low, close: d.close }),
 	classNames: d => isDefined(d.absoluteChange) ? (d.absoluteChange > 0 ? "up" : "down") : "firstbar",
 	stroke: d => isDefined(d.absoluteChange) ? (d.absoluteChange > 0 ? "#6BA583" : "#FF0000") : "#000000",

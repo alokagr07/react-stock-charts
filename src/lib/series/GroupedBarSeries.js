@@ -21,7 +21,7 @@ class GroupedBarSeries extends Component {
 	renderSVG(moreProps) {
 		const { xAccessor } = moreProps;
 
-		return <g className="react-stockcharts-grouped-bar-series">
+		return <g className="react-stock-charts-grouped-bar-series">
 			{svgHelper(this.props, moreProps, xAccessor, identityStack, postProcessor)}
 		</g>;
 	}

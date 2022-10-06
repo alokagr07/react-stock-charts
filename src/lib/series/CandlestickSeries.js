@@ -79,9 +79,9 @@ CandlestickSeries.propTypes = {
 };
 
 CandlestickSeries.defaultProps = {
-	className: "react-stockcharts-candlestick",
-	wickClassName: "react-stockcharts-candlestick-wick",
-	candleClassName: "react-stockcharts-candlestick-candle",
+	className: "react-stock-charts-candlestick",
+	wickClassName: "react-stock-charts-candlestick-wick",
+	candleClassName: "react-stock-charts-candlestick-candle",
 	yAccessor: d => ({ open: d.open, high: d.high, low: d.low, close: d.close }),
 	classNames: d => d.close > d.open ? "up" : "down",
 	width: plotDataLengthBarWidth,

@@ -77,7 +77,7 @@ PointAndFigureSeries.propTypes = {
 };
 
 PointAndFigureSeries.defaultProps = {
-	className: "react-stockcharts-point-and-figure",
+	className: "react-stock-charts-point-and-figure",
 	strokeWidth: 1,
 	stroke: {
 		up: "#6BA583",

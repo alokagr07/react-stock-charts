@@ -41,10 +41,10 @@ a.button {
 }
 .dark {
     background: #303030; //#303030
-    .react-stockcharts-tooltip {
+    .react-stock-charts-tooltip {
         fill: white;
     }
-    .react-stockcharts-tooltip-label {
+    .react-stock-charts-tooltip-label {
         fill: yellow;
     }
 }
@@ -127,7 +127,6 @@ a.button {
  */
 
 .main {
-  // padding: 20px;
   top: 51px;
 }
 @media (min-width: 768px) {

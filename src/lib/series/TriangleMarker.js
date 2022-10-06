@@ -73,7 +73,7 @@ Triangle.defaultProps = {
 	strokeWidth: 1,
 	opacity: 0.5,
 	fill: "#4682B4",
-	className: "react-stockcharts-marker-triangle",
+	className: "react-stock-charts-marker-triangle",
 };
 Triangle.drawOnCanvas = (props, point, ctx) => {
 	const { stroke, fill, opacity, strokeWidth } = props;

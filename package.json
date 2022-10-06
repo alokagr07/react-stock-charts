@@ -7,7 +7,7 @@
   "author": {
     "name": "Ragu Ramaswamy"
   },
-  "homepage": "http://rrag.github.io/react-stockcharts/",
+  "homepage": "http://alokagr07.github.io/react-stock-charts/",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf -rf ./build",
@@ -75,7 +75,7 @@
     "es6-promise": "^4.2.8",
     "eslint": "^8.24.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-const-immutable": "^2.1.0",
+    "eslint-plugin-const-immutable":  "^2.1.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -140,15 +140,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rrag/react-stockcharts.git"
+    "url": "https://github.com/alokagr07/react-stock-charts.git"
   },
   "bugs": {
-    "url": "https://github.com/rrag/react-stockcharts/issues"
+    "url": "https://github.com/alokagr07/react-stock-charts/issues"
   },
   "maintainers": [
     {
-      "name": "rrag",
-      "email": "ragunath.ramaswamy@gmail.com"
+      "name": "alokagr07",
+      "email": "alok.agrawal07@gmail.com"
     }
   ]
 }

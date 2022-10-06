@@ -99,7 +99,7 @@ class InteractiveYCoordinate extends Component {
 							onDelete={this.handleDelete}
 							onDrag={this.handleDrag}
 							onDragComplete={this.handleDragComplete}
-							edgeInteractiveCursor="react-stockcharts-move-cursor"
+							edgeInteractiveCursor="react-stock-charts-move-cursor"
 						/>
 					);
 				})}

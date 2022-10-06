@@ -27,7 +27,7 @@ class OverlayBarSeries extends Component {
 		const { yAccessor } = this.props;
 
 		const bars = getBars(this.props, moreProps, yAccessor);
-		return <g className="react-stockcharts-bar-series">
+		return <g className="react-stock-charts-bar-series">
 			{getBarsSVG2(this.props, bars)}
 		</g>;
 	}

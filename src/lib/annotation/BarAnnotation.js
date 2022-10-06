@@ -172,7 +172,7 @@ BarAnnotation.propTypes = {
 };
 
 BarAnnotation.defaultProps = {
-	className: "react-stockcharts-bar-annotation",
+	className: "react-stock-charts-bar-annotation",
 	opacity: 1,
 	fill: "#000000",
 	textAnchor: "middle",

@@ -1,4 +1,4 @@
-[source](https://github.com/rrag/react-stockcharts/blob/master/docs/lib/charts/CandleStickChartWithCHMousePointer.js), [codesandbox](https://codesandbox.io/s/github/rrag/react-stockcharts-examples2/tree/master/examples/CandleStickChartWithCHMousePointer)
+[source](https://github.com/alokagr07/react-stock-charts/blob/master/docs/lib/charts/CandleStickChartWithCHMousePointer.js), [codesandbox](https://codesandbox.io/s/github/alokagr07/react-stock-charts-examples2/tree/master/examples/CandleStickChartWithCHMousePointer)
 
 
 ```js

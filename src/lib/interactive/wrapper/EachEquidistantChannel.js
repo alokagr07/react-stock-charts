@@ -202,14 +202,14 @@ class EachEquidistantChannel extends Component {
 				{this.getEdgeCircle({
 					xy: startXY,
 					dragHandler: this.handleLine1Edge1Drag,
-					cursor: "react-stockcharts-move-cursor",
+					cursor: "react-stock-charts-move-cursor",
 					fill: edgeFill,
 					edge: "line1edge1",
 				})}
 				{this.getEdgeCircle({
 					xy: endXY,
 					dragHandler: this.handleLine1Edge2Drag,
-					cursor: "react-stockcharts-move-cursor",
+					cursor: "react-stock-charts-move-cursor",
 					fill: edgeFill,
 					edge: "line1edge2",
 				})}
@@ -220,14 +220,14 @@ class EachEquidistantChannel extends Component {
 				{this.getEdgeCircle({
 					xy: [startXY[0], startXY[1] + dy],
 					dragHandler: this.handleChannelHeightChange,
-					cursor: "react-stockcharts-ns-resize-cursor",
+					cursor: "react-stock-charts-ns-resize-cursor",
 					fill: edgeFill2,
 					edge: "line2edge1",
 				})}
 				{this.getEdgeCircle({
 					xy: [endXY[0], endXY[1] + dy],
 					dragHandler: this.handleChannelHeightChange,
-					cursor: "react-stockcharts-ns-resize-cursor",
+					cursor: "react-stock-charts-ns-resize-cursor",
 					fill: edgeFill2,
 					edge: "line2edge2",
 				})}
@@ -249,7 +249,7 @@ class EachEquidistantChannel extends Component {
 				strokeOpacity={strokeOpacity}
 				fill={fill}
 				fillOpacity={fillOpacity}
-				interactiveCursorClass="react-stockcharts-move-cursor"
+				interactiveCursorClass="react-stock-charts-move-cursor"
 
 				onDragStart={this.handleDragStart}
 				onDrag={this.handleChannelDrag}

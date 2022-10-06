@@ -2,7 +2,7 @@ import { tsvParse } from  "d3-dsv";
 import { timeParse } from "d3-time-format";
 
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 import Chart from "./lib/charts/CandleStickChartWithDarkTheme";
 // import Chart from "./lib/charts/OHLCChartWithElderRayIndicator";
@@ -39,6 +39,9 @@ function loadPage() {
 			return d;
 		}))
 		.then(data => {
-			ReactDOM.render(<Chart data={data} type="hybrid"/>, document.getElementById("chart"));
+			const root = ReactDOM.createRoot(document.getElementById('chart'));
+			root.render(
+				<Chart data={data} type="hybrid"/>
+			);
 		});
 }

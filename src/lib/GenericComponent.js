@@ -136,7 +136,7 @@ class GenericComponent extends Component {
 					/* && !prevHover */
 					&& amIOnTop(this.suscriberId)
 					&& isDefined(this.props.onHover)) {
-					setCursorClass("react-stockcharts-pointer-cursor");
+					setCursorClass("react-stock-charts-pointer-cursor");
 					this.iSetTheCursorClass = true;
 				} else if (this.moreProps.hovering
 					&& this.props.selected
@@ -277,7 +277,7 @@ class GenericComponent extends Component {
 				getPanConditions: this.getPanConditions,
 			}
 		);
-		this.componentWillReceiveProps(this.props, this.context);
+		this.UNSAFE_componentWillReceiveProps(this.props, this.context);
 	}
 	componentWillUnmount() {
 		const { unsubscribe } = this.context;

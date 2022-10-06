@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ToolTipTSpanLabel(props) {
-	return <tspan className="react-stockcharts-tooltip-label" {...props}>{props.children}</tspan>;
+	return <tspan className="react-stock-charts-tooltip-label" {...props}>{props.children}</tspan>;
 }
 
 ToolTipTSpanLabel.propTypes = {

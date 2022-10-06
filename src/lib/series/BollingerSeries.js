@@ -67,8 +67,8 @@ BollingerSeries.propTypes = {
 };
 
 BollingerSeries.defaultProps = {
-	className: "react-stockcharts-bollinger-band-series",
-	areaClassName: "react-stockcharts-bollinger-band-series-area",
+	className: "react-stock-charts-bollinger-band-series",
+	areaClassName: "react-stock-charts-bollinger-band-series-area",
 	opacity: 0.2
 };
 

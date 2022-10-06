@@ -54,7 +54,7 @@ ScatterSeries.propTypes = {
 };
 
 ScatterSeries.defaultProps = {
-	className: "react-stockcharts-scatter",
+	className: "react-stock-charts-scatter",
 };
 
 function helper(props, moreProps, xAccessor) {

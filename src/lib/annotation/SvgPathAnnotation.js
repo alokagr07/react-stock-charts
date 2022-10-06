@@ -60,7 +60,7 @@ SvgPathAnnotation.propTypes = {
 };
 
 SvgPathAnnotation.defaultProps = {
-	className: "react-stockcharts-svgpathannotation",
+	className: "react-stock-charts-svgpathannotation",
 	opacity: 1,
 	x: ({ xScale, xAccessor, datum }) => xScale(xAccessor(datum)),
 };

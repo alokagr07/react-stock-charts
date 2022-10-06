@@ -23,7 +23,7 @@ export * from "./strokeDasharray";
 export function getLogger(prefix) {
 	let logger = noop;
 	if (process.env.NODE_ENV !== "production") {
-		logger = require("debug")("react-stockcharts:" + prefix);
+		logger = require("debug")("react-stock-charts:" + prefix);
 	}
 	return logger;
 }

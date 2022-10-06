@@ -85,7 +85,7 @@ class ZoomButtons extends Component {
 		// zoomIn.closePath();
 
 		return (
-			<g className="react-stockcharts-zoom-button">
+			<g className="react-stock-charts-zoom-button">
 				<rect
 					x={zoomOutX - w / 2}
 					y={y}
@@ -138,7 +138,7 @@ class ZoomButtons extends Component {
 					stroke={textFill}
 					strokeWidth={textStrokeWidth}
 				/>
-				<rect className="react-stockcharts-enable-interaction out"
+				<rect className="react-stock-charts-enable-interaction out"
 					onClick={this.handleZoomOut}
 					x={zoomOutX - w / 2}
 					y={y}
@@ -148,7 +148,7 @@ class ZoomButtons extends Component {
 					width={w}
 					fill="none"
 				/>
-				<rect className="react-stockcharts-enable-interaction reset"
+				<rect className="react-stock-charts-enable-interaction reset"
 					onClick={onReset}
 					x={resetX - w / 2}
 					y={y}
@@ -158,7 +158,7 @@ class ZoomButtons extends Component {
 					width={w}
 					fill="none"
 				/>
-				<rect className="react-stockcharts-enable-interaction in"
+				<rect className="react-stock-charts-enable-interaction in"
 					onClick={this.handleZoomIn}
 					x={zoomInX - w / 2}
 					y={y}

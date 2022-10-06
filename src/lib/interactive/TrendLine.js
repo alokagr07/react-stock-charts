@@ -174,8 +174,8 @@ class TrendLine extends Component {
 					hoverText={hoverTextWithDefault}
 					onDrag={this.handleDragLine}
 					onDragComplete={this.handleDragLineComplete}
-					edgeInteractiveCursor="react-stockcharts-move-cursor"
-					lineInteractiveCursor="react-stockcharts-move-cursor"
+					edgeInteractiveCursor="react-stock-charts-move-cursor"
+					lineInteractiveCursor="react-stock-charts-move-cursor"
 				/>;
 			})}
 			{tempLine}

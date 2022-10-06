@@ -201,14 +201,14 @@ class EachGannFan extends Component {
 				{this.getEdgeCircle({
 					xy: startXY,
 					dragHandler: this.handleLine1Edge1Drag,
-					cursor: "react-stockcharts-move-cursor",
+					cursor: "react-stock-charts-move-cursor",
 					fill: edgeFill,
 					edge: "edge1"
 				})}
 				{this.getEdgeCircle({
 					xy: endXY,
 					dragHandler: this.handleLine1Edge2Drag,
-					cursor: "react-stockcharts-move-cursor",
+					cursor: "react-stock-charts-move-cursor",
 					fill: edgeFill,
 					edge: "edge2"
 				})}
@@ -233,7 +233,7 @@ class EachGannFan extends Component {
 					fontFamily={fontFamily}
 					fontSize={fontSize}
 					fontFill={fontFill}
-					interactiveCursorClass="react-stockcharts-move-cursor"
+					interactiveCursorClass="react-stock-charts-move-cursor"
 
 					onDragStart={this.handleDragStart}
 					onDrag={this.handleFanDrag}

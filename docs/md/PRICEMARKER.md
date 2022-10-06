@@ -1,4 +1,4 @@
-[source](https://github.com/rrag/react-stockcharts/blob/master/docs/lib/charts/CandleStickChartWithPriceMarkers.js), [codesandbox](https://codesandbox.io/s/github/rrag/react-stockcharts-examples2/tree/master/examples/CandleStickChartWithPriceMarkers)
+[source](https://github.com/alokagr07/react-stock-charts/blob/master/docs/lib/charts/CandleStickChartWithPriceMarkers.js), [codesandbox](https://codesandbox.io/s/github/alokagr07/react-stock-charts-examples2/tree/master/examples/CandleStickChartWithPriceMarkers)
 
 
 Demo shows how to set one, ore more, price markers a chart. The markers sticks to the price and will adjust with pan and zoom. To

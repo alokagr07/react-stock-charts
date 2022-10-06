@@ -1,5 +1,5 @@
 
-[source](https://github.com/rrag/react-stockcharts/blob/master/docs/lib/charts/CandleStickChartWithZoomPan.js), [codesandbox](https://codesandbox.io/s/github/rrag/react-stockcharts-examples2/tree/master/examples/CandleStickChartWithZoomPan)
+[source](https://github.com/alokagr07/react-stock-charts/blob/master/docs/lib/charts/CandleStickChartWithZoomPan.js), [codesandbox](https://codesandbox.io/s/github/alokagr07/react-stock-charts-examples2/tree/master/examples/CandleStickChartWithZoomPan)
 
 
 Click and drag the axis, to zoom on y & x. Once y axis is zoomed you can pan the chart on both x & y axis. Reset the y axis domain with the "Reset y domain" button

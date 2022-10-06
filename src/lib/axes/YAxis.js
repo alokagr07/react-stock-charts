@@ -19,7 +19,7 @@ class YAxis extends Component {
 			zoomEnabled={this.props.zoomEnabled && zoomEnabled}
 			edgeClip
 			axisZoomCallback={this.axisZoomCallback}
-			zoomCursorClassName="react-stockcharts-ns-resize-cursor" />;
+			zoomCursorClassName="react-stock-charts-ns-resize-cursor" />;
 	}
 }
 
@@ -48,10 +48,10 @@ YAxis.defaultProps = {
 	showTicks: true,
 	showTickLabel: true,
 	showDomain: true,
-	className: "react-stockcharts-y-axis",
+	className: "react-stock-charts-y-axis",
 	ticks: 10,
 	outerTickSize: 0,
-	domainClassName: "react-stockcharts-axis-domain",
+	domainClassName: "react-stock-charts-axis-domain",
 	fill: "none",
 	stroke: "#FFFFFF",
 	strokeWidth: 1,

@@ -181,7 +181,7 @@ RSISeries.propTypes = {
 };
 
 RSISeries.defaultProps = {
-	className: "react-stockcharts-rsi-series",
+	className: "react-stock-charts-rsi-series",
 	stroke: {
 		line: "#000000",
 		top: "#B8C2CC",

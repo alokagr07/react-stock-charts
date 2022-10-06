@@ -1,19 +1,19 @@
 ## v0.7.0
-Details available in https://github.com/rrag/react-stockcharts/issues/206
+Details available in https://github.com/alokagr07/react-stock-charts/issues/206
 
 
 ## v0.6.1
 
 #### New features
 
-1. Weighted Moving Average indicator PR [#200](https://github.com/rrag/react-stockcharts/pull/200)- Thank you [@mgeri](https://github.com/mgeri)
-1. Triangular Moving Average indicator PR [#204](https://github.com/rrag/react-stockcharts/pull/204)- Thank you [@mgeri](https://github.com/mgeri)
+1. Weighted Moving Average indicator PR [#200](https://github.com/alokagr07/react-stock-charts/pull/200)- Thank you [@mgeri](https://github.com/mgeri)
+1. Triangular Moving Average indicator PR [#204](https://github.com/alokagr07/react-stock-charts/pull/204)- Thank you [@mgeri](https://github.com/mgeri)
 1. SAR indicator
 
 #### Bug fixes
 
-1. [#196](https://github.com/rrag/react-stockcharts/issues/196) - Add `clip` property (default = true) to `BarSeries`, `CandlestickSeries`, `ElderRaySeries`, `MACDSeries`, `OHLCSeries`, `OverlayBarSeries`, `PointAndFigureSeries`, `RenkoSeries`, `StackedBarSeries`
-1. [#203](https://github.com/rrag/react-stockcharts/issues/203) - Filter out bars which have invalid y values
+1. [#196](https://github.com/alokagr07/react-stock-charts/issues/196) - Add `clip` property (default = true) to `BarSeries`, `CandlestickSeries`, `ElderRaySeries`, `MACDSeries`, `OHLCSeries`, `OverlayBarSeries`, `PointAndFigureSeries`, `RenkoSeries`, `StackedBarSeries`
+1. [#203](https://github.com/alokagr07/react-stock-charts/issues/203) - Filter out bars which have invalid y values
 
 
 ## v0.6.0
@@ -31,11 +31,11 @@ Details available in https://github.com/rrag/react-stockcharts/issues/206
 1. Pan on y
 1. Support for pan to load more data
 1. Click, Right click, Doubleclick handlers on `LineSeries` - This can serve as a model for other series
-1. Add `tickStrokeDasharray` - [#183](https://github.com/rrag/react-stockcharts/pull/183) and [documentation](http://rrag.github.io/react-stockcharts/documentation.html#/line_scatter)
-1. Control the number of datapoints/px - [#192](https://github.com/rrag/react-stockcharts/pull/192)
-1. Hovertooltip now autosizes based on the content - [#189](https://github.com/rrag/react-stockcharts/pull/189)
-1. Smooth zoom - [#160](https://github.com/rrag/react-stockcharts/pull/160)
-1. More markers for a scatter chart - [#172](https://github.com/rrag/react-stockcharts/pull/172)
+1. Add `tickStrokeDasharray` - [#183](https://github.com/alokagr07/react-stock-charts/pull/183) and [documentation](http://alokagr07.github.io/react-stock-charts/documentation.html#/line_scatter)
+1. Control the number of datapoints/px - [#192](https://github.com/alokagr07/react-stock-charts/pull/192)
+1. Hovertooltip now autosizes based on the content - [#189](https://github.com/alokagr07/react-stock-charts/pull/189)
+1. Smooth zoom - [#160](https://github.com/alokagr07/react-stock-charts/pull/160)
+1. More markers for a scatter chart - [#172](https://github.com/alokagr07/react-stock-charts/pull/172)
 
 #### Contributors
 Please welcome [@shprink](https://github.com/shprink) as a new contributor.
@@ -82,7 +82,7 @@ Please welcome [@shprink](https://github.com/shprink) as a new contributor.
 1. Removed `yMousePointerDisplayLocation`, `yMousePointerDisplayFormat` from `Chart`, Use `MouseCoordinateY` instead
 1. Interactive indicators are `svg` only. This is most likely a transitional change till they get rewritten again in a future version to support canvas, be on the lookout for another possibly breaking change on interactive indicators
 
-    Interactive indicators are no longer placed inside a `Chart`, they live inside `EventCapture`. Placing them on top of the event capture `rect` has helped in making [#94](https://github.com/rrag/react-stockcharts/issues/94) possible
+    Interactive indicators are no longer placed inside a `Chart`, they live inside `EventCapture`. Placing them on top of the event capture `rect` has helped in making [#94](https://github.com/alokagr07/react-stock-charts/issues/94) possible
 
     in `0.4`
 
@@ -116,21 +116,21 @@ Please welcome [@shprink](https://github.com/shprink) as a new contributor.
 #### New features
 
 1. Support both React `0.14` and React `15`
-1. Annotations for events [#54](https://github.com/rrag/react-stockcharts/issues/54) - [more details](#/annotations)
+1. Annotations for events [#54](https://github.com/alokagr07/react-stock-charts/issues/54) - [more details](#/annotations)
 1. Buy & sell signals using Annotation - [more](#/ma_crossover_using_text_annotation) [details](#/ma_crossover_using_svg_shape)
 1. Labels - Look at how Chart title and axis labels [more details](#/annotations)
 1. Hover tooltip - [more details](#/hover_tooltip)
 1. intraday scale - [more details](#/intra_day_with_discontinuous_scale)
-1. Better edge coordinate - [#79](https://github.com/rrag/react-stockcharts/pull/79) - Thank you [@cesardeazevedo](https://github.com/cesardeazevedo) - 
+1. Better edge coordinate - [#79](https://github.com/alokagr07/react-stock-charts/pull/79) - Thank you [@cesardeazevedo](https://github.com/cesardeazevedo) - 
 1. Volume profile - Refer to documentation for [volume profile](#/volume_profile) and [volume profile by session](#/volume_profile_by_session) Thank you [@aajtodd](https://github.com/aajtodd) for great documentation references
 
 #### Contributors
 
 I thank all the contributors for taking your time to help make this better
 
-1. [@akinoniku](https://github.com/akinoniku) for [#88](https://github.com/rrag/react-stockcharts/pull/88)
-1. [@brobits](https://github.com/brobits) for [#69](https://github.com/rrag/react-stockcharts/pull/69)
-1. [@cesardeazevedo](https://github.com/cesardeazevedo) for [#79](https://github.com/rrag/react-stockcharts/pull/79), [#97](https://github.com/rrag/react-stockcharts/pull/97)
+1. [@akinoniku](https://github.com/akinoniku) for [#88](https://github.com/alokagr07/react-stock-charts/pull/88)
+1. [@brobits](https://github.com/brobits) for [#69](https://github.com/alokagr07/react-stock-charts/pull/69)
+1. [@cesardeazevedo](https://github.com/cesardeazevedo) for [#79](https://github.com/alokagr07/react-stock-charts/pull/79), [#97](https://github.com/alokagr07/react-stock-charts/pull/97)
 
 Special thanks to
 [@rsklyar](https://github.com/rsklyar)
@@ -158,7 +158,7 @@ for your constant support, providing ideas for new features, suggestions for imp
         - `xExtents` - indicates the domain of the x axis
         - `calculators` - indicates the calculators to be calculated on the data
 
-    For a summary of changes, refer to [this issue](https://github.com/rrag/react-stockcharts/issues/48#issuecomment-174184639). Compare the examples [before (`0.3`)](https://github.com/rrag/react-stockcharts/tree/2af0c6e763ae960d40eb6c5406b4fe0ec8da2ac2/docs/lib/charts) and [after(`0.4`](https://github.com/rrag/react-stockcharts/tree/8386c424821907512b8e135a8a7fded3e5e09c83/docs/lib/charts)
+    For a summary of changes, refer to [this issue](https://github.com/alokagr07/react-stock-charts/issues/48#issuecomment-174184639). Compare the examples [before (`0.3`)](https://github.com/alokagr07/react-stock-charts/tree/2af0c6e763ae960d40eb6c5406b4fe0ec8da2ac2/docs/lib/charts) and [after(`0.4`](https://github.com/alokagr07/react-stock-charts/tree/8386c424821907512b8e135a8a7fded3e5e09c83/docs/lib/charts)
 
 1. All the `calculator`s, are written d3 style. (inspired by [d3fc](https://github.com/ScottLogic/d3fc))
 1. `CompareSeries` is gone in favor of a calculator in its place. Refer to the examples for usage
@@ -181,7 +181,7 @@ for your constant support, providing ideas for new features, suggestions for imp
 
 #### Changes
 
-1. Fix [#39](https://github.com/rrag/react-stockcharts/issues/39)
+1. Fix [#39](https://github.com/alokagr07/react-stock-charts/issues/39)
 1. Add eslint rules to prevent these from happening again
 1. Change `utils.js` and `ChartDataUtil.js` to use es6 exports
 1. fix `svg` for `Brush`
@@ -210,7 +210,7 @@ for your constant support, providing ideas for new features, suggestions for imp
 
 #### Breaking Changes
 
-1. Opacity works only when using Hex colors, using color names like `steelblue` `red` `black` is not recommended. This is to address #1 in [issue #22](https://github.com/rrag/react-stockcharts/issues/22)
+1. Opacity works only when using Hex colors, using color names like `steelblue` `red` `black` is not recommended. This is to address #1 in [issue #22](https://github.com/alokagr07/react-stock-charts/issues/22)
 
 #### Changes
 
@@ -259,7 +259,7 @@ for your constant support, providing ideas for new features, suggestions for imp
 1. Add utility method to convert hex to rgba
 1. Fix axes so svg and canvas result in near pixel perfect output
 1. Round off x of Histogram so svg and canvas look similar
-1. Change import in examples from ReStock to react-stockcharts
+1. Change import in examples from ReStock to react-stock-charts
 1. Add zIndex as property to ChartCanvas
 
 
@@ -267,19 +267,19 @@ for your constant support, providing ideas for new features, suggestions for imp
 
 #### Changes
 
-1. Fix updating data for Kagi, Renko, P&F. Add examples [#17](https://github.com/rrag/react-stockcharts/issues/17)
+1. Fix updating data for Kagi, Renko, P&F. Add examples [#17](https://github.com/alokagr07/react-stock-charts/issues/17)
 
 ## v0.2.3
 
 #### Changes
 
-1. Make it work with both react 0.13.3 & 0.14.0-rc1 [#12](https://github.com/rrag/react-stockcharts/issues/12)
+1. Make it work with both react 0.13.3 & 0.14.0-rc1 [#12](https://github.com/alokagr07/react-stock-charts/issues/12)
 
 ## v0.2.2
 
 #### Breaking Changes
 
-1. Use react & react-dom 0.14.0-rc1 as dependency, added `peerDependency` to resolve [#12](https://github.com/rrag/react-stockcharts/issues/12)
+1. Use react & react-dom 0.14.0-rc1 as dependency, added `peerDependency` to resolve [#12](https://github.com/alokagr07/react-stock-charts/issues/12)
 
 #### Internal changes
 

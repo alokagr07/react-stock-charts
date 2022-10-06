@@ -124,7 +124,7 @@ class InteractiveText extends Component {
 
 					onDrag={this.handleDrag}
 					onDragComplete={this.handleDragComplete}
-					edgeInteractiveCursor="react-stockcharts-move-cursor"
+					edgeInteractiveCursor="react-stock-charts-move-cursor"
 				/>;
 			})}
 			<GenericChartComponent
