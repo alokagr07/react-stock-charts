@@ -1,5 +1,5 @@
 {
-  "name": "react-stock-charts",
+  "name": "@alokagr07/react-stock-charts",
   "version": "0.0.1",
   "description": "Highly customizable stock charts with ReactJS and d3",
   "main": "src/index.js",
