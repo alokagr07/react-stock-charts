@@ -47,7 +47,7 @@ and it is simple to create your own indicator too
 ---
 ### Installation
 ```sh
-npm install  --save react-stock-charts
+npm install  --save @alokagr07/react-stock-charts
 ```
 
 ### Documentation
